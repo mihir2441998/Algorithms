@@ -1,3 +1,7 @@
+package search;
+
+import datastructures.Vertex;
+
 import java.util.Deque;
 import java.util.LinkedList;
 
@@ -9,7 +13,7 @@ public class DFS<T> {
         this.start = start;
     }
 
-    void traverse(){
+    public void traverse(){
         if(start == null) return;
         Deque<Vertex<T>> stack = new LinkedList<>();
         stack.push(start);
@@ -17,7 +21,7 @@ public class DFS<T> {
             Vertex<T> current = stack.pop();
             while(!current.isVisited()){
                 current.setVisited(true);
-                System.out.print(current.data + "\t");
+                System.out.print(current.getData() + "\t");
 
                 for(Vertex<T> vertex: current.getNeighbours()){
                     if(!vertex.isVisited()){

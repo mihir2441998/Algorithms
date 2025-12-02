@@ -1,6 +1,8 @@
+package search;
+
 public class BinarySearch {
 
-    static int search(int[] arr, int key){
+    public static int search(int[] arr, int key){
         int low = 0;
         int high  = arr.length -1;
         while(low<=high){

@@ -1,6 +1,8 @@
+package sort;
+
 public class BubbleSort {
 
-    static int[] sort (int[] arr, int n){
+    public static int[] sort (int[] arr, int n){
         boolean swapped;
         int temp;
         for(int i =0 ; i < n-1; i ++){

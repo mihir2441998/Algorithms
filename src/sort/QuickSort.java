@@ -1,6 +1,8 @@
+package sort;
+
 public class QuickSort {
 
-    static void sort(int[] arr, int low, int high){
+    public static void sort(int[] arr, int low, int high){
         if(low<high){
 
 

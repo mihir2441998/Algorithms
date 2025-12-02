@@ -1,3 +1,7 @@
+package search;
+
+import datastructures.Vertex;
+
 import java.util.LinkedList;
 import java.util.Queue;
 
@@ -9,7 +13,7 @@ public class BFS<T> {
         this.start = start;
     }
 
-    void traverse(){
+    public void traverse(){
         if(start == null) return;
         Queue<Vertex<T>> queue = new LinkedList<>();
         queue.add(start);

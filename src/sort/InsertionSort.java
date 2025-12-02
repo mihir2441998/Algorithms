@@ -1,6 +1,8 @@
+package sort;
+
 public class InsertionSort {
 
-    static int[] sort(int[] arr){
+    public static int[] sort(int[] arr){
         int n = arr.length;
         for(int i = 1; i<n ; i++){
             int key = arr[i];

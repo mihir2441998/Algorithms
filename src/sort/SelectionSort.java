@@ -1,6 +1,8 @@
+package sort;
+
 public class SelectionSort {
 
-    static int[] sort(int[] arr){
+    public static int[] sort(int[] arr){
         int min_index;
         int n = arr.length;
         for(int i = 0 ; i< n-1; i++){
